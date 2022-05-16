@@ -19,11 +19,11 @@ body{
 
 .container{
     align-items: center;
-    width: 75vw;
     display: flex;
     flex-direction: column;
     height: 85vh;
     justify-content: space-around;
+    width: 75vw;
 }
 
 input[name="slide"]{
@@ -81,11 +81,10 @@ img{
 
 .meme-text{
     color: rgb(255, 0, 212);
-    text-shadow: 0 0 5px rgb(0, 0, 0);
-    letter-spacing: 0.12rem;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 700;
-    
+    letter-spacing: 0.12rem;
+    text-shadow: 0 0 5px rgb(0, 0, 0);
 }
 
 .text1{
@@ -97,22 +96,22 @@ img{
     align-items: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     height: 5vh;
+    justify-content: space-between;
 }
 
 label{
     align-items: center;
     cursor: pointer;
     display: flex;
-    justify-content: center;
     height: 100%;
+    justify-content: center;
     width: 25%;
 }
 
 label:hover > div{
-    background-color:  rgb(0, 255, 242);
-    border-color: rgb(0, 255, 242);
+    background-color:  rgb(255, 124, 233);
+    border-color: rgb(255, 124, 233);
     transform: scale(1.1);
 }
 
@@ -161,8 +160,8 @@ label:active > div{
 @media screen and (min-width: 768px) {
     .nav-and-text{
         flex-direction: row;
-        justify-content: space-between;
         height: 5vh;
+        justify-content: space-between;
         width: 75vw;
     }
 
@@ -210,8 +209,8 @@ label:active > div{
 
     .nav-and-text{
         flex-direction: column-reverse;
-        justify-content: space-between;
         height: 15vh;
+        justify-content: space-between;
         width: 75vw;
     }
 
