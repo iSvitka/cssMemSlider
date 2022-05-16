@@ -1,0 +1,203 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    align-items: center;
+    background-image: url("assets/memes-painting-hd-wallpaper-preview.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+}
+
+.container{
+    align-items: center;
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    justify-content: space-around;
+}
+
+input[name="slide"]{
+    display: none;
+}
+
+.slider{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 75vw;
+}
+
+.slides{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.slide{
+    width: 75vw;
+}
+
+img{
+    border-radius: 1vw;
+    max-height: 50vh;
+    width: 75vw;
+}
+
+.nav-and-text{
+    align-items: center;
+    display: flex;
+}
+
+.slide1{
+    transition: all 0.25s ease-in-out;
+}
+
+.text-slider{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.memes-texts{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.meme-text{
+    color: rgb(255, 0, 212);
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+    letter-spacing: 0.12rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    
+}
+
+.text1{
+    transition: all 0.25s ease-in-out;
+}
+
+
+.navigation{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 5vh;
+}
+
+label{
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 25%;
+}
+
+label:hover > div{
+    background-color:  rgb(0, 255, 242);
+    border-color: rgb(0, 255, 242);
+    transform: scale(1.1);
+}
+
+label:active > div{
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+    box-shadow: 0 0 0.5vw #FFFFFF;
+}
+
+.label{
+    background-color: rgb(255, 0, 212);
+    border: 0.23vw solid rgb(255, 0, 212);
+    border-radius: 100%;
+    box-shadow: 0 0 0.5vw #000000;
+    transition: all 0.25s ease-in-out;
+}
+
+#s1:checked ~ .slider > .slides > .slide1{
+    margin-left: 225vw;
+}
+#s1:checked ~ .nav-and-text > .navigation > label > .l1{
+    background: none;
+}
+
+#s2:checked ~ .slider > .slides > .slide1{
+    margin-left: 75vw;
+}
+#s2:checked ~ .nav-and-text > .navigation > label > .l2{
+    background: none;
+}
+
+#s3:checked ~ .slider > .slides > .slide1{
+    margin-left: -75vw;
+}
+#s3:checked ~ .nav-and-text > .navigation > label > .l3{
+    background: none;
+}
+
+#s4:checked ~ .slider > .slides > .slide1{
+    margin-left: -225vw;
+}
+#s4:checked ~ .nav-and-text > .navigation > label > .l4{
+    background: none;
+}
+
+@media screen and (min-width: 768px) {
+    .nav-and-text{
+        flex-direction: row;
+        justify-content: space-between;
+        height: 5vh;
+        width: 75vw;
+    }
+
+    .text-slider{
+        width: 50vw;
+    }
+
+    .meme-text{
+        font-size: 5vh;
+        width: 50vw;
+    }
+
+    .navigation{
+        width: 10vw;
+    }
+
+    .label{
+        height: 1.5vw;
+        width: 1.5vw;
+    }
+
+    
+    #s1:checked ~ .nav-and-text > .text-slider > .memes-texts > .text1{
+        margin-left: 150vw;
+    }
+
+    #s2:checked ~ .nav-and-text > .text-slider > .memes-texts > .text1{
+        margin-left: 50vw;
+    }
+    
+    #s3:checked ~ .nav-and-text > .text-slider > .memes-texts > .text1{
+        margin-left: -50vw;
+    }
+    
+    #s4:checked ~ .nav-and-text > .text-slider > .memes-texts > .text1{
+        margin-left: -150vw;
+    }
+}
