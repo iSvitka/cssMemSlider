@@ -219,11 +219,11 @@ label:active > div{
     }
 
     .memes-texts{
-        height: 5vh;
+        height: 7vmax;
     }
 
     .meme-text{
-        font-size: 3vh;
+        font-size: 2vmax;
         width: 75vw;
     }
 
