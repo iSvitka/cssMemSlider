@@ -201,3 +201,55 @@ label:active > div{
         margin-left: -150vw;
     }
 }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .container{
+        height: 70vh;
+        justify-content: space-between;
+    }
+
+    .nav-and-text{
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        height: 15vh;
+        width: 75vw;
+    }
+
+    .text-slider{
+        width: 75vw;
+    }
+
+    .memes-texts{
+        height: 5vh;
+    }
+
+    .meme-text{
+        font-size: 3vh;
+        width: 75vw;
+    }
+
+    .navigation{
+        width: 20vh;
+    }
+
+    .label{
+        height: 2vh;
+        width: 2vh;
+    }
+
+    #s1:checked ~ .nav-and-text > .text-slider > .memes-texts > .text1{
+        margin-left: 225vw;
+    }
+
+    #s2:checked ~ .nav-and-text > .text-slider > .memes-texts > .text1{
+        margin-left: 75vw;
+    }
+    
+    #s3:checked ~ .nav-and-text > .text-slider > .memes-texts > .text1{
+        margin-left: -75vw;
+    }
+    
+    #s4:checked ~ .nav-and-text > .text-slider > .memes-texts > .text1{
+        margin-left: -225vw;
+    }
+}
